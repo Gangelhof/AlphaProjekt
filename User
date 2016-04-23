@@ -6,19 +6,14 @@ import java.util.ArrayList;
 public class User 
 {
     
-    private ArrayList<Integer> stash;
+    private ArrayList<Drug> stash;
     private int money;
     
     public User()
     {
       stash = new ArrayList();
       this.money = 5000;
-      stash.add(0);
-      stash.add(0);
-      stash.add(0);
-      stash.add(0);
-      stash.add(0);
-      stash.add(0); // et forslag til ArrayList
+      stash.add(new Drug("Cocain", 1200, 30))
     }
       
 }//slut
